@@ -623,7 +623,10 @@ footer
 {
     color:#c33;
 }
-
+.NON_MOBILE
+{
+    display: none;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -649,7 +652,15 @@ footer
 
 @media only screen and (min-width: 768px) 
 {
-    .mobile_img
+    .NON_MOBILE
+    {
+        display: inline;
+    }
+    .wrapper 
+    {
+        display: none;
+    }
+    /* .mobile_img
     {
         display:none;
     }
@@ -701,9 +712,9 @@ footer
         font-size: 1.4em;
         margin-left: 20%;
         margin-right: 20%;
-        /* color: #3B3131; */
-    }
-    .tes_pgh
+        /* color: #3B3131; 
+    }*/
+    /*.tes_pgh
     {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.4em;
@@ -720,6 +731,6 @@ footer
     #sidebar.active 
     {
         width: -200px;
-    }
+    } */
 
 }
